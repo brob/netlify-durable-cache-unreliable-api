@@ -16,3 +16,9 @@ This repository is a demo based on this article (link after). It demonstrates ho
 You can run this locally with the Netlify CLI. You can also deploy this to Netlify and test it out.
 
 The deployed version will give you the best sense of the caching, as the local environment does not cache in the same way.
+
+## Run locally
+
+1. Clone this repository
+2. Run `npm install`
+3. Run `netlify dev` to start the server locally
