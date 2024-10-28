@@ -2,7 +2,7 @@
 
 This repository is a demo based on this article (link after). It demonstrates how to set up a function with Durable Caching so that a slow API can be served swiftly from a shared cache between all CDN nodes on Netlify's Edge network.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=<tbd>)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/brob/netlify-durable-cache-unreliable-api)
 
 
 ## Routes
