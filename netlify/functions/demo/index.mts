@@ -1,7 +1,5 @@
 import { Config, Context } from "@netlify/functions";
 import { CacheHeaders } from "cdn-cache-control";
-import etag from "etag";
-
 
 async function getArticles(username: string) {
   // Artificial slow API
@@ -18,8 +16,8 @@ export default async (req: Request, context: Context) => {
   const { username } = context.params;
   const articles = await getArticles(username);
   
-  const headers = new CacheHeaders();
-  console.log(headers)
+  const headers = new CacheHeaders().tag("articles", "articles-" + username);
+
   const response = new Response(JSON.stringify({
     articles,
     username
